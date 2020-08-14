@@ -5,14 +5,16 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "export": "nuxt export",
-    "serve": "nuxt serve",
+    "start": "nuxt start -p 3003",
+    "export": "nuxt export ",
+    "serve": "nuxt serve -p 3001",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "npm run lint:js && npm run lint:style",
     "test": "jest",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "generate-mock": "node mock/generate.js > mock/db.json",
+    "mock": "json-server mock/db.json -p 3002"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
@@ -31,7 +33,11 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "faker": "^4.1.0",
     "jest": "^26.0.1",
+    "json-server": "^0.16.1",
+    "less": "^3.12.2",
+    "less-loader": "^6.2.0",
     "prettier": "^2.0.5",
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.1",
