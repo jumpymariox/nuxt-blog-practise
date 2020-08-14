@@ -1,20 +1,21 @@
-# nuxt1
+# nuxt-blogs-practise
 
-## Build Setup
+## 简介
+该项目为本人学习nuxt.js的练习博客项目，可按照以下的启动项目步骤启动预览。
 
-```bash
-# install dependencies
-$ npm install
+## 启动项目
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+### 安装
 ```
+npm install 
+```
+### 启动mock服务
+```$xslt
+npm run mock
+``` 
+### 启动开发服务
+```$xslt
+npm run dev
+```
+访问启动开发服务后提供的链接即可
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
